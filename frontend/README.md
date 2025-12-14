@@ -2,50 +2,6 @@
 ## Docente: Sebastián Cabezas Ríos
 ## Estudiante: Alonso Garcia Espinoza
 
-## git log
-
-commit 3ae16981048ddafc21e672220d038b0897c217cd (HEAD -> main, origin/main)
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:25:21 2025 -0300
-
-    Creacion de cards de empresas
-
-commit 191c0978748ed83c7b37f5346b4b7585858ed0fe
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:24:59 2025 -0300
-
-    Creacion de formularios
-
-commit 8158dbc872b4fbec9a3a66477f0abb514bb93f69
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:24:36 2025 -0300
-
-    Creacion de modales
-
-commit 5bf03faca6b8d13f2649d852222a06937ff8a3b4
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:23:43 2025 -0300
-
-    Aplicacion de estilos
-
-commit 7f79c1675342fa6474c73b96c7a258c4350b5be9
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:23:24 2025 -0300
-
-    Conexion con la API
-
-commit f06af57ab63e557a5a1f82b9c4e3fd4fcfc29212
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:22:10 2025 -0300
-
-    Estructura del proyecto
-
-commit 748ba0ac724aa2dcf2fa27a923981352a486f1ad
-Author: Wuanpack <alonso.garcia.x@gmail.com>
-Date:   Sat Dec 13 23:12:47 2025 -0300
-
-    Estructura del Proyecto
-
 ## Estructura del Proyecto
 
 frontend/
@@ -209,3 +165,48 @@ Se priorizó:
 - Separación de responsabilidades
 - Escalabilidad
 - Buenas prácticas profesionales
+
+
+## git log
+
+commit 3ae16981048ddafc21e672220d038b0897c217cd (HEAD -> main, origin/main)
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:25:21 2025 -0300
+
+    Creacion de cards de empresas
+
+commit 191c0978748ed83c7b37f5346b4b7585858ed0fe
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:24:59 2025 -0300
+
+    Creacion de formularios
+
+commit 8158dbc872b4fbec9a3a66477f0abb514bb93f69
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:24:36 2025 -0300
+
+    Creacion de modales
+
+commit 5bf03faca6b8d13f2649d852222a06937ff8a3b4
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:23:43 2025 -0300
+
+    Aplicacion de estilos
+
+commit 7f79c1675342fa6474c73b96c7a258c4350b5be9
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:23:24 2025 -0300
+
+    Conexion con la API
+
+commit f06af57ab63e557a5a1f82b9c4e3fd4fcfc29212
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:22:10 2025 -0300
+
+    Estructura del proyecto
+
+commit 748ba0ac724aa2dcf2fa27a923981352a486f1ad
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:12:47 2025 -0300
+
+    Estructura del Proyecto
