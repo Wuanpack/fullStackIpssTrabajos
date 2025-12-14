@@ -21,7 +21,8 @@ frontend/
 │          ├── FormularioEditarTipo.js
 │          ├── ModalEmpresa.js
 │          ├── ModalEditarEmpresa.js
-│          └── ToggleEstado.js 
+│          ├── ToggleEstado.js
+│          └── utils.js 
 ├── docs/
 │ └── buenas_practicas.md # Documentación de buenas prácticas
 └── README.md
