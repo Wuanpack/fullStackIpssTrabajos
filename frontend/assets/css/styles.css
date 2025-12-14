@@ -268,3 +268,49 @@ main {
 .custom-modal .btn-primary {
   align-self: flex-end;
 }
+
+.form-error {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.modal-error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #b91c1c;
+    color: #fef2f2; 
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Estilo base del mensaje de error */
+.modal-error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #b91c1c; /* rojo oscuro */
+    color: #fef2f2; /* blanco suave */
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Icono dentro del mensaje */
+.modal-error i {
+    font-size: 1rem;
+}
+
+/* Animación de entrada */
+.modal-error.show {
+    opacity: 1;
+    transform: translateY(0);
+}

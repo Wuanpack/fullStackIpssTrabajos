@@ -1,4 +1,5 @@
 import { obtenerTiposEmpresa, actualizarGestor } from "../api.js";
+import { mostrarErrorModal } from "./utils.js"; // Función para mostrar errores animados
 
 export function crearFormularioEditarTipo(empresa, onClose, onSuccess) {
     const form = document.createElement("form");
@@ -13,7 +14,9 @@ export function crearFormularioEditarTipo(empresa, onClose, onSuccess) {
 
         <label>
             Tipo de empresa
-            <select name="empresa_tipo_id" required></select>
+            <select name="empresa_tipo_id" required>
+                <option value="">Cargando...</option>
+            </select>
         </label>
 
         <button type="submit">Guardar cambios</button>
@@ -21,7 +24,9 @@ export function crearFormularioEditarTipo(empresa, onClose, onSuccess) {
 
     const select = form.querySelector("select");
 
+    // Cargar tipos de empresa desde la API
     obtenerTiposEmpresa().then(tipos => {
+        select.innerHTML = "";
         tipos.forEach(tipo => {
             const option = document.createElement("option");
             option.value = tipo.id;
@@ -38,16 +43,36 @@ export function crearFormularioEditarTipo(empresa, onClose, onSuccess) {
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const ok = await actualizarGestor(empresa.id, {
-            nombre: empresa.nombre,
-            empresa_tipo: {
-                id: Number(select.value)
-            }
-        });
+        try {
+            const { ok, status } = await actualizarGestor(empresa.id, {
+                nombre: empresa.nombre,
+                empresa_tipo: { id: Number(select.value) }
+            });
 
-        if (ok) {
+            if (!ok) {
+                // Mostrar mensaje según el status HTTP
+                switch (status) {
+                    case 409:
+                        mostrarErrorModal(form, "Conflicto: la empresa ya tiene este tipo.");
+                        break;
+                    case 404:
+                        mostrarErrorModal(form, "Empresa no encontrada.");
+                        break;
+                    case 500:
+                        mostrarErrorModal(form, "Error del servidor, intenta más tarde.");
+                        break;
+                    default:
+                        mostrarErrorModal(form, "Error al actualizar, intenta más tarde.");
+                }
+                return; // Importante: no cerrar el modal
+            }
+
+            // Éxito: cerrar modal y ejecutar callback
             onSuccess?.();
             onClose();
+
+        } catch (error) {
+            mostrarErrorModal(form, "Error inesperado, intenta más tarde.");
         }
     });
 
