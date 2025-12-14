@@ -170,7 +170,37 @@ Se priorizó:
 
 ## git log
 
-commit 3ae16981048ddafc21e672220d038b0897c217cd (HEAD -> main, origin/main)
+commit 5822f77632a9856499a6dc91656faf1165849735 (origin/main)
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sun Dec 14 00:03:10 2025 -0300
+
+    Mensajes de error para creacion y modificacion de empresas
+
+commit 2f8771d68d1148c61e21cd47afaf40fce659ebb0
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:48:07 2025 -0300
+
+    Manejo de errores
+
+commit 311491d7752328ef79c6c9369deb2d6621b6f251
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:41:07 2025 -0300
+
+    Comentarios
+
+commit d87794bb499f4157663d74b74d670b65e7886722
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:27:36 2025 -0300
+
+    Refinando codigo 2
+
+commit a3379ba7ca6bf3d3592504bbdc12609d9f4279fd
+Author: Wuanpack <alonso.garcia.x@gmail.com>
+Date:   Sat Dec 13 23:26:42 2025 -0300
+
+    Refinando codigo
+
+commit 3ae16981048ddafc21e672220d038b0897c217cd
 Author: Wuanpack <alonso.garcia.x@gmail.com>
 Date:   Sat Dec 13 23:25:21 2025 -0300
 
